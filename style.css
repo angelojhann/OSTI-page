@@ -13,12 +13,39 @@
   border: 0;
 }
 
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.container-main {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
 /* Standards */
 
 .font-standard {
   font-family: Montserrat;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.justify {
+  text-align: justify;
+}
 /* end of standards */
 
 /* Navigation Bar */
@@ -26,28 +53,24 @@
     width: 100%;
     height: 100%;
   }
-
   #my-background {
     background-color: #ddccc4;
-    background-size: cover;
     background-position: center;
   }
-
   .navbar-brand img{
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 5px;
-    width: auto;
-    height: 100%;
+    width: 330px;
+    height: 50px;
   }
-
   .navbar {
-    background-color: rgba(243, 154, 124, 0.7);
-    opacity: 80%    ;
+    position: fixed;
+    opacity: 100%;
     display: flex;
     justify-content: center;
+    background-color: #f39a7c;
   }
-
   /* end of Navigation Bar */
 
   /* Services */
@@ -59,7 +82,6 @@
     justify-content: space-evenly;
     text-align: center;
   }
-  
   .serv-1 {
     border-radius: 50px;
     background-size: 100% 100%;
@@ -73,14 +95,13 @@
     text-align: center;
     transition: all 0.3s;
     cursor: pointer;
-    background-color: rgb(122, 111, 111);
+    background-color: #f39a7cab;
     overflow: hidden;
   }
   .serv-1:hover{
     background-color: #f39a7c;
     background-image: none;
   }
-
   .serv-1:hover .serv-header{
     background-color: transparent;
   }
@@ -91,7 +112,6 @@
     animation-direction: normal;
     animation-fill-mode: forwards;
   }
-
   @keyframes rightToRight{
     0%{
       margin-left: 200%;
@@ -99,15 +119,6 @@
     100%{
       margin-left: 0%;
     }
-  }
-  .sbg-1{
-    background-color: rgba(104, 98, 98, 0.6);
-  }
-  .sbg-2{
-    background-color: rgba(104, 98, 98, 0.6);
-  }
-  .sbg-3{
-    background-color: rgba(104, 98, 98, 0.6);
   }
   .sbg-4{
     background-image: url(pics/4.jpg);
@@ -136,7 +147,6 @@
     display: none;
     margin-left: 200%;
   }
-
   /* End of Services */
 
   /* About Us */
@@ -149,7 +159,14 @@
     text-align: center;
     margin-bottom: 50px;
   }
-
+  .contact h1 {
+    font-weight: 800;
+    text-align: center;
+    margin: 50px;
+  }
+  .contact h2 {
+    font-weight: 100;
+  }
   .contact-info {
     border-radius: 50px;
     background-size: 100% 100%;
@@ -161,19 +178,22 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    transition: all 0.3s;
+    transition: all;
     cursor: pointer;
     background-color: #f39a7cab;
-    box-shadow: 3px 3px 3px black;
     overflow: hidden;
+    color: initial;
   }
   .contact-info:hover{
+    background-color: #f39a7c;
     background-image: none;
+    color: transparent;
   }
   .contact-header{
     font-weight: 800;
     letter-spacing: 3px;
-  }
+    
+  } 
   .contact-details{
     width: 100%;
     height: 80%;
@@ -190,4 +210,22 @@
     animation-fill-mode: forwards;
   }
 
-  
+  /* footer */
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px ;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    background-color: #f39a7c;
+    font-size: 12px;
+  }   
+
+  .footer p {
+    padding-top: 15px;
+  }

@@ -12,6 +12,7 @@
         <title>Document</title>
 </head>
 <body>
+  <div class="main-container">
      <!-- Navigation Bar -->
      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo"></a>
@@ -20,7 +21,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -29,7 +30,7 @@
             <li class="nav-item">
               <a class="nav-link" href="prod_serv.html">Products and Services</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
               </a>
@@ -39,42 +40,41 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Item 3</a>
               </div>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link active" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
 
-    <div class="contact font-standard">
-        <h1>Contact Information</h1>
+    <div class="contact">
+        <h1>Get in touch.</h1>
             <div class="contact-container1">
                 <div class="contact-info">
-                    <h2 class="contact-header">Mobile:</h2>
+                    <h2 class="contact-header shadowed-text">Mobile</h2>
                     <p class="contact-details"><em>0928526267/ 0917881364</em></p>
                 </div>
                 <div class="contact-info">
-                    <h2 class="contact-header">Telephone:</h2>
+                    <h2 class="contact-header">Telephone</h2>
                     <p class="contact-details"><em>(63 32) 253 479</em></p>
                 </div>
             </div>
             <div class="contact-container2">
                 <div class="contact-info">
-                    <h2 class="contact-header">E-mail:</h2>
-                       <p class="contact-details">rfalcon@osti.com.ph / rfalcon.osti@gmail.com</p>
+                    <h2 class="contact-header">E-mail</h2>
+                       <p class="contact-details">rfalcon@osti.com.ph  rfalcon.osti@gmail.com</p>
                 </div>
                 <div class="contact-info">
-                    <h2 class="contact-header">Location:</h2>
-                    <p class="contact-details" onclick="openNewPage('https:\/\/www.google.com/maps/dir/open+space+technologies+inc/@10.3130435,123.9046051,14z/data=!3m1!4b1!4m6!4m5!1m1!4e2!1m2!1m1!1s0x33a9995ba9a64a05:0xc9e4a6051281029d?entry=ttu')">Zosa bldg., 761 D. Jakosalem St., Brgy. Day-As, 
-                            Cebu City, Cebu, Philippines 6000</p> 
+                    <h2 class="contact-header normal">Location</h2>
+                      <a class="contact-details" href="https://www.google.com/maps?output=search&q=open+space+technologies+inc&entry=mc&sa=X&ved=2ahUKEwjhx8_9v_v_AhW4b2wGHVOMBT0Q0pQJegQIDRAB" target="_blank">Click to see Location</a> 
                 </div> 
-                <script>
-                    function openNewPage(url){
-                        window.open(url,"_blank");
-                    }
-                </script>
             </div>
+    </div>
+
+      <div class="footer">
+        <p>Copyright © 2023 Open'Space Technologies, Inc.</p>
+      </div>
     </div>
 </body>
 </html>
