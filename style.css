@@ -13,7 +13,15 @@
   border: 0;
 }
 
+/* Standards */
 
+.font-standard {
+  font-family: Montserrat;
+}
+
+/* end of standards */
+
+/* Navigation Bar */
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -32,12 +40,17 @@
     width: auto;
     height: 100%;
   }
+
   .navbar {
-    background-color: #f39a7c;
+    background-color: rgba(243, 154, 124, 0.7);
+    opacity: 80%    ;
     display: flex;
     justify-content: center;
   }
 
+  /* end of Navigation Bar */
+
+  /* Services */
   .image-container {
     margin-top: 50px;
     display: flex;
@@ -113,6 +126,7 @@
     z-index: 12;
     height: fit-content;
     width: 100%;
+    height: 20%;
   }
   .serv-info{
     color: white;
@@ -123,4 +137,57 @@
     margin-left: 200%;
   }
 
-/* About Us */
+  /* End of Services */
+
+  /* About Us */
+
+  /* Contact */
+  .contact-container1, .contact-container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .contact-info {
+    border-radius: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #f39a7cab;
+    box-shadow: 3px 3px 3px black;
+    overflow: hidden;
+  }
+  .contact-info:hover{
+    background-image: none;
+  }
+  .contact-header{
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .contact-details{
+    width: 100%;
+    height: 80%;
+    display: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .contact-info:hover .contact-details{
+    color: white;
+    display: block;
+    animation-name: rightToRight;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  

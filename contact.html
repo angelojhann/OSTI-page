@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open'Space Technologies Inc.</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Document</title>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="pics/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prod_serv.html">Products and Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="contact font-standard">
+        <h1>Contact Information</h1>
+            <div class="contact-container1">
+                <div class="contact-info">
+                    <h2 class="contact-header">Mobile:</h2>
+                    <p class="contact-details"><em>0928526267/ 0917881364</em></p>
+                </div>
+                <div class="contact-info">
+                    <h2 class="contact-header">Telephone:</h2>
+                    <p class="contact-details"><em>(63 32) 253 479</em></p>
+                </div>
+            </div>
+            <div class="contact-container2">
+                <div class="contact-info">
+                    <h2 class="contact-header">E-mail:</h2>
+                       <p class="contact-details">rfalcon@osti.com.ph / rfalcon.osti@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <h2 class="contact-header">Location:</h2>
+                    <p class="contact-details" onclick="openNewPage('https:\/\/www.google.com/maps/dir/open+space+technologies+inc/@10.3130435,123.9046051,14z/data=!3m1!4b1!4m6!4m5!1m1!4e2!1m2!1m1!1s0x33a9995ba9a64a05:0xc9e4a6051281029d?entry=ttu')">Zosa bldg., 761 D. Jakosalem St., Brgy. Day-As, 
+                            Cebu City, Cebu, Philippines 6000</p> 
+                </div> 
+                <script>
+                    function openNewPage(url){
+                        window.open(url,"_blank");
+                    }
+                </script>
+            </div>
+    </div>
+</body>
+</html>
