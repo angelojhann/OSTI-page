@@ -16,7 +16,7 @@
 
 body {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -28,7 +28,6 @@ body {
 .container-main {
   position: relative;
   width: 100%;
-  margin: 0px;
   overflow-x: hidden;
 }
 
@@ -218,20 +217,48 @@ body {
   /* About Us */
 
   /* Contact */
+  
+  .contact h1 {
+    font-weight: 800;
+    text-align: center;
+    margin: 50px;
+  }
   .outer-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .contacts{
     display: flex;
     justify-content: space-evenly;
   }
+  svg {
+    padding-top: 20px;
+  }
+  .card{
+    border-radius: 20px;
+    width: 300px;
+  }
+  .card, .card-body, .card-title, .card-text, .btn {
+    align-items: center;
+  }
+  /* .card-title{
+    padding-left: 45px;
+  }
+  .card-text{
+    padding-left: 10px;
+  } */
+  iframe {
+    width: 100%;
+    border-radius: 20px;
+  }
+  /* 
   .contact-container1 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
     flex-direction: column;
-  }
-  .contact h1 {
-    font-weight: 800;
-    text-align: center;
-    margin: 50px;
   }
   .contact h2 {
     font-weight: 100;
@@ -278,7 +305,7 @@ body {
     animation-duration: 1.5s;
     animation-direction: normal;
     animation-fill-mode: forwards;
-  }
+  } */
 
   /* footer */
 
@@ -299,7 +326,22 @@ body {
   }
 
   @media screen and (max-width: 1000px) {
-    .serv-header{
+    .contacts{
+      flex-direction: column;
+      align-items: center; 
+    }
+    .card{
+      margin-top: 15px;
+    }
+    .card-title{
+      font-size: 20px;
+    }
+    .card-text{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .contacts{
       font-size: 25px; 
     }
     .serv-1 p {
