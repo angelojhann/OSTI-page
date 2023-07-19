@@ -10,17 +10,12 @@
 /* Standards */
 * {
   font-family: Montserrat;
-  margin: 0;
-  border: 0;
 }
-
 body {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-
-
 .container {
   position: relative;
   width: 100%;
@@ -30,19 +25,15 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
 .font-standard {
   font-family: Montserrat;
 }
-
 .bold {
   font-weight: bold;
 }
-
 .normal {
   font-weight: normal;
 }
-
 .justify {
   text-align: justify;
 }
@@ -50,14 +41,6 @@ body {
 
 /* Navigation Bar */
 
-/* .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  } */
-  #my-background {
-    background-color: #ddccc4;
-    background-position: center;
-  }
   .navbar-brand img{
     position: relative;
     top: 0px;
@@ -66,74 +49,80 @@ body {
     height: 50px;
   }
   .navbar {
+    color: white;
     position: fixed;
     opacity: 100%;
     display: flex;
     justify-content: center;
-    background-color: #f39a7c;
+    background-image: linear-gradient(to right, #fdb49b 10%, #e05223);
+  }
+  .nav-link{
+    font-size: 1.2rem;
+    font-weight: 900;
   }
   /* end of Navigation Bar */
 
   /* Index */
+  .overall-container{
+    /* Set the background image path */
+    /* background-image: url('pics/building.jpg'); */
 
-  .landing{
-    display: flex;
-    flex-direction: column;
+    /* Adjust the background size and position */
+    background-size: cover;
+    background-position: center center;
+
+    /* Set the background to fixed for a parallax effect */
+    background-attachment: fixed;
+
+    /* Set a minimum height to ensure the image is always visible */
     min-height: 100vh;
-    justify-content: center;
-    /* align-items: center; */
-  }
-  /* .landing img{
-    position: relative;
-  } */
-  .container-main{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .landing{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
   }
+.landing img {
+  height: 500px;
+  width: 800px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.landing-text-container{
+  padding-left: 30px;
+}
+.landing-text-container h1{
+  text-shadow:  3px 3px 2px rgba(0, 0, 0, 0.5);;
+  color: #f39a7c;
+  font-family:'Montserrat';
+  font-size: 5rem;
+  font-weight: 900;
+}
+.landing-text-container p{
+  padding-right: 90px;
+  color: #f39a7cab;
+  font-family:'Montserrat';
+  font-size: 1rem;
+}
+.landing-text-container button{
+  border-radius: 10px;
+  height: 50px;
+  margin-left: 33%;
+  background-color: #f39a7c;
+  color: white;
+  border-color: #f39a7c;
+}
+.landing-text-container button:hover{
+  background-color: white;
+  color: #f39a7c;
+  transition: 0.3s ease;
+}
 
-  .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #f39a7c;
-  }
-  .col h1 {
-  font-size:20px;
-  height: 300px;
-  }
-  .service  {
-    border-radius: 20px;
-    width: 370px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-  .service-image{
-    display: block;
-    border-radius: 20px ;
-    width: 200px;
-    height: auto;
-  }
-  .image-cont{
-    position: relative;
-    display: inline-block;
-  }
-  .hover-image{
-    border-radius: 20px;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    height: 300px;
-  }
-  .image-cont:hover .hover-image {
-    opacity: 1;
-    cursor: pointer;
-  }
   /* Products and Services TAB */
   .image-container {
     margin-top: 50px;
@@ -318,7 +307,6 @@ body {
     background-color: #f39a7c;
     padding: 20px;
     text-align: center;
-    margin-top: 50px;
   }   
 
   .footer p {
