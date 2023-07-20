@@ -12,6 +12,7 @@
   font-family: Montserrat;
 }
 body {
+  background-image: linear-gradient(to top right, #f7c3b2 50%, #f0a48b);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -54,7 +55,7 @@ body {
     opacity: 100%;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, #fdb49b 10%, #e05223);
+    background-color: white;
   }
   .nav-link{
     font-size: 1.2rem;
@@ -88,8 +89,8 @@ body {
     padding: 50px;
   }
 .landing img {
-  height: 500px;
-  width: 800px;
+  height: 300px;
+  width: 500px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -97,15 +98,17 @@ body {
   padding-left: 30px;
 }
 .landing-text-container h1{
-  text-shadow:  3px 3px 2px rgba(0, 0, 0, 0.5);;
-  color: #f39a7c;
+  text-shadow:  3px 3px 2px white;;
+  color: #0053B5;
   font-family:'Montserrat';
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
+  text-align: justify;
 }
-.landing-text-container p{
+.landing-text-container h2{
+  text-align: justify;
   padding-right: 90px;
-  color: #f39a7cab;
+  color: #0053B5;
   font-family:'Montserrat';
   font-size: 1rem;
 }
@@ -113,14 +116,15 @@ body {
   border-radius: 10px;
   height: 50px;
   margin-left: 33%;
-  background-color: #f39a7c;
+  background-color: #218cf0;
   color: white;
-  border-color: #f39a7c;
+  box-shadow: 2px 2px 2px black;
+  transition: 0.3s ease;
 }
 .landing-text-container button:hover{
-  background-color: white;
-  color: #f39a7c;
-  transition: 0.3s ease;
+  background-color: #f39a7c;
+  color: white;
+  box-shadow: inset 2px 2px 2px black;
 }
 
   /* Products and Services TAB */
